@@ -42,6 +42,13 @@ def test5():
         result=a/b
         return jsonify((str(result)))
 
+@app.route('/abc1/sudh/test6',methods=['GET','POST'])
+def test6():
+    if(request.method=='POST'):
+        a=request.json['num1']
+        b=request.json['num2']
+        result=a/b
+        return jsonify((str(result)))
 
 
 if __name__=='__main__':#it try invoke the enter the python main
